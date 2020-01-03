@@ -22,7 +22,7 @@ module.exports = function(
 				path: `TEST`,
 				exempt: false,
 				level: 'error', // info | warning | error
-				description: `Connection test failed: TEST`,
+				description: JSON.stringify(project),
 			});
 	
 	return {
