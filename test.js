@@ -17,7 +17,7 @@ module.exports = function(
 */
 	
 	messages.push({
-				rule: 'test-rule',
+				rule: 'test-rule-2',
 				location: `model:TEST`,
 				path: `TEST`,
 				exempt: false,
