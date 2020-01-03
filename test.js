@@ -2,7 +2,7 @@ module.exports = function(
 	project,
 ) {
 	let messages = [];
-	for (let model of project.models || []) {
+	/*for (let model of project.models || []) {
 		if (model.connection) {
 			messages.push({
 				rule: 'test-rule',
@@ -14,7 +14,17 @@ module.exports = function(
 			});
 		}
 	}
-
+*/
+	
+	messages.push({
+				rule: 'test-rule',
+				location: `model:TEST`,
+				path: `TEST`,
+				exempt: false,
+				level: 'error', // info | warning | error
+				description: `Connection test failed: TEST`,
+			});
+	
 	return {
 		messages,
 	};
